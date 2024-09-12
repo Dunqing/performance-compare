@@ -1,12 +1,15 @@
 {
   "name": "@farmfe-examples/react",
   "version": "0.0.0",
+  "packageManager": "pnpm@9.10.0",
   "scripts": {
     "benchmark": "node benchmark.mjs",
     "start:farm": "farm start",
     "build:farm": "farm build",
     "start:vite": "vite",
     "build:vite": "vite build",
+    "start:vite:oxc": "vite -c vite.oxc.config.ts",
+    "build:vite:oxc": "vite build -c vite.oxc.config.ts",
     "start:vite:babel": "vite -c vite.babel.config.ts",
     "build:vite:babel": "vite build -c vite.babel.config.ts",
     "start:rsbuild": "rsbuild dev",
@@ -51,6 +54,7 @@
     "@types/react-dom": "18",
     "@vitejs/plugin-react": "^4.3.1",
     "@vitejs/plugin-react-swc": "^3.7.0",
+    "@vitejs/plugin-react-oxc": "file:///Users/qing/p/github/vite-plugin-react-swc/dist",
     "babel-loader": "^9.1.2",
     "core-js": "^3.31.0",
     "css-loader": "^6.7.3",

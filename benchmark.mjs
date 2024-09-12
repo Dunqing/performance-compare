@@ -185,6 +185,25 @@ const buildTools = [
     true
   ),
   new BuildTool(
+    "Vite 6.0.0-alpha (oxc)",
+    5173,
+    "start:vite:oxc",
+    /ready\s*in\s*(.+?)(m?s)/,
+    "build:vite:oxc",
+    /built\s*in\s*(.+?)(m?s)/,
+    "vite/bin/vite.js"
+  ),
+  new BuildTool(
+    "Vite 6.0.0-alpha (oxc)(Hot)",
+    5173,
+    "start:vite:oxc",
+    /ready\s*in\s*(.+?)(m?s)/,
+    "build:vite:oxc",
+    /built\s*in\s*(.+?)(m?s)/,
+    "vite/bin/vite.js",
+    true
+  ),
+  new BuildTool(
     "Vite 6.0.0-alpha (swc)",
     5173,
     "start:vite",
@@ -222,46 +241,46 @@ const buildTools = [
     "vite/bin/vite.js",
     true
   ),
-  new BuildTool(
-    "Webpack 5.91.0 (swc)",
-    8081,
-    "start:webpack",
-    /compiled\s+.+\sin\s*(.+?)(m?s)/,
-    "build:webpack",
-    /compiled\s+.+\sin\s*(.+?)(m?s)/,
-    "webpack-cli/bin/cli.js"
-  ),
-  new BuildTool(
-    "Webpack 5.91.0 (swc)(Hot)",
-    8081,
-    "start:webpack",
-    /compiled\s+.+\sin\s*(.+?)(m?s)/,
-    "build:webpack",
-    /compiled\s+.+\sin\s*(.+?)(m?s)/,
+  // new BuildTool(
+  //   "Webpack 5.91.0 (swc)",
+  //   8081,
+  //   "start:webpack",
+  //   /compiled\s+.+\sin\s*(.+?)(m?s)/,
+  //   "build:webpack",
+  //   /compiled\s+.+\sin\s*(.+?)(m?s)/,
+  //   "webpack-cli/bin/cli.js"
+  // ),
+  // new BuildTool(
+  //   "Webpack 5.91.0 (swc)(Hot)",
+  //   8081,
+  //   "start:webpack",
+  //   /compiled\s+.+\sin\s*(.+?)(m?s)/,
+  //   "build:webpack",
+  //   /compiled\s+.+\sin\s*(.+?)(m?s)/,
 
-    "webpack-cli/bin/cli.js",
-    true
-  ),
-  new BuildTool(
-    "Webpack 5.91.0 (babel)",
-    8081,
-    "start:webpack:babel",
-    /compiled\s+.+\sin\s*(.+?)(m?s)/,
-    "build:webpack",
-    /compiled\s+.+\sin\s*(.+?)(m?s)/,
-    "webpack-cli/bin/cli.js"
-  ),
-  new BuildTool(
-    "Webpack 5.91.0 (babel)(Hot)",
-    8081,
-    "start:webpack:babel",
-    /compiled\s+.+\sin\s*(.+?)(m?s)/,
-    "build:webpack",
-    /compiled\s+.+\sin\s*(.+?)(m?s)/,
+  //   "webpack-cli/bin/cli.js",
+  //   true
+  // ),
+  // new BuildTool(
+  //   "Webpack 5.91.0 (babel)",
+  //   8081,
+  //   "start:webpack:babel",
+  //   /compiled\s+.+\sin\s*(.+?)(m?s)/,
+  //   "build:webpack",
+  //   /compiled\s+.+\sin\s*(.+?)(m?s)/,
+  //   "webpack-cli/bin/cli.js"
+  // ),
+  // new BuildTool(
+  //   "Webpack 5.91.0 (babel)(Hot)",
+  //   8081,
+  //   "start:webpack:babel",
+  //   /compiled\s+.+\sin\s*(.+?)(m?s)/,
+  //   "build:webpack",
+  //   /compiled\s+.+\sin\s*(.+?)(m?s)/,
 
-    "webpack-cli/bin/cli.js",
-    true
-  ),
+  //   "webpack-cli/bin/cli.js",
+  //   true
+  // ),
 ];
 
 const browser = await puppeteer.launch({ headless: "new" });
