@@ -146,44 +146,44 @@ class BuildTool {
 }
 
 const buildTools = [
-  new BuildTool(
-    "Farm 1.2.2",
-    9000,
-    "start:farm",
-    /Ready\s*in\s*(.+?)(m?s)/,
-    "build:farm",
-    /completed\s*in\s*(.+?)(m?s)/,
-    "@farmfe/cli/bin/farm.mjs"
-  ),
-  new BuildTool(
-    "Farm 1.2.2 (Hot)",
-    9000,
-    "start:farm",
-    /Ready\s*in\s*(.+?)(m?s)/,
-    "build:farm",
-    /completed\s*in\s*(.+?)(m?s)/,
-    "@farmfe/cli/bin/farm.mjs",
-    true
-  ),
-  new BuildTool(
-    "Rsbuild 0.7.10",
-    6532,
-    "start:rsbuild",
-    /in\s*(.+?)(m?s)/,
-    "build:rsbuild",
-    /in\s*(.+?)(m?s)/,
-    "@rspack/cli/bin/rspack"
-  ),
-  new BuildTool(
-    "Rsbuild 0.7.10 (Hot)",
-    6532,
-    "start:rsbuild",
-    /in\s*(.+?)(m?s)/,
-    "build:rsbuild",
-    /in\s*(.+?)(m?s)/,
-    "@rsbuild/core/bin/rsbuild.js",
-    true
-  ),
+  // new BuildTool(
+  //   "Farm 1.2.2",
+  //   9000,
+  //   "start:farm",
+  //   /Ready\s*in\s*(.+?)(m?s)/,
+  //   "build:farm",
+  //   /completed\s*in\s*(.+?)(m?s)/,
+  //   "@farmfe/cli/bin/farm.mjs"
+  // ),
+  // new BuildTool(
+  //   "Farm 1.2.2 (Hot)",
+  //   9000,
+  //   "start:farm",
+  //   /Ready\s*in\s*(.+?)(m?s)/,
+  //   "build:farm",
+  //   /completed\s*in\s*(.+?)(m?s)/,
+  //   "@farmfe/cli/bin/farm.mjs",
+  //   true
+  // ),
+  // new BuildTool(
+  //   "Rsbuild 0.7.10",
+  //   6532,
+  //   "start:rsbuild",
+  //   /in\s*(.+?)(m?s)/,
+  //   "build:rsbuild",
+  //   /in\s*(.+?)(m?s)/,
+  //   "@rspack/cli/bin/rspack"
+  // ),
+  // new BuildTool(
+  //   "Rsbuild 0.7.10 (Hot)",
+  //   6532,
+  //   "start:rsbuild",
+  //   /in\s*(.+?)(m?s)/,
+  //   "build:rsbuild",
+  //   /in\s*(.+?)(m?s)/,
+  //   "@rsbuild/core/bin/rsbuild.js",
+  //   true
+  // ),
   new BuildTool(
     "Vite 6.0.0-alpha (oxc)",
     5173,
@@ -227,7 +227,7 @@ const buildTools = [
     5173,
     "start:vite:babel",
     /ready\s*in\s*(.+?)(m?s)/,
-    "build:vite",
+    "build:vite:babel",
     /built\s*in\s*(.+?)(m?s)/,
     "vite/bin/vite.js"
   ),
@@ -236,7 +236,7 @@ const buildTools = [
     5173,
     "start:vite:babel",
     /ready\s*in\s*(.+?)(m?s)/,
-    "build:vite",
+    "build:vite:babel",
     /built\s*in\s*(.+?)(m?s)/,
     "vite/bin/vite.js",
     true
